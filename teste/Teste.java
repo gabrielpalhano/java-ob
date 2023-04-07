@@ -1,15 +1,14 @@
 class Teste {
-	public static void main(String[] args) {
-		int i = 1;
-		int j = 1;
-			do{
-				System.out.println(j);
-				i = i+1;
-			} while(i < 1);
-			
-			while(j < 1) {
-				System.out.println(j);
-				j = j+1;
+	
+	public static void main (String[] args) {
+		int i;
+		
+			for(i = 1; i < 3; i++) {
+				for(int j = 0; j <= 2; j+=2) {
+					System.out.print(i);
+					System.out.print(j);
+					
+				}
 			}
 	}
 }
