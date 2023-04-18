@@ -1,14 +1,20 @@
 class Teste {
 	
 	public static void main (String[] args) {
+		int fibo = 10;
 		int i;
+		int j;
+		int aux;
 		
-			for(i = 1; i < 3; i++) {
-				for(int j = 0; j <= 2; j+=2) {
-					System.out.print(i);
-					System.out.print(j);
+			for(i = 0; i <= fibo; i++) {
+				for (j = i + 1; j < fibo; j++) {
 					
-				}
+						aux = j;
+						i += j;
+						j = aux;
+							System.out.println(i);
+							
+				}		
 			}
 	}
 }
