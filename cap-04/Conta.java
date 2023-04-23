@@ -1,6 +1,7 @@
 class Conta {
 	int numero;
 	double saldo;
+	double limite;
 	String titular;
 	
 	boolean sacar(double valor) {
