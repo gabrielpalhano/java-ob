@@ -1,8 +1,14 @@
+class Cliente {
+	String nome;
+	String sobrenome;
+	String cpf;
+}
+
 class Conta {
 	int numero;
 	double saldo;
 	double limite;
-	String titular;
+	Cliente titular;
 	
 	boolean sacar(double valor) {
 		
@@ -16,5 +22,19 @@ class Conta {
 	
 	void depositar(double qtd) {
 		this.saldo += qtd;
+	}
+	
+	void transferir(Conta destino, double valor) {
+		this.saldo -= valor;
+		destino.saldo += valor;
+		
+	/* boolean	retirou	= this.sacar(valor);
+			if	(retirou ==	false)	{
+				//	não	deu	pra	sacar!
+				return false;
+			}
+			else{destino.depositar(valor);
+				return true;
+			} */
 	}
 }
