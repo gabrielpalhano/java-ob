@@ -22,3 +22,5 @@ class ImprimaSoma1a100 {
 		
 	}
 }
+
+/* 2.	 Imprima	a	soma	de	1	até	1000. */

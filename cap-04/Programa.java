@@ -2,7 +2,7 @@ class Programa {
 	public static void main(String[] args) {
 		Conta minhaConta;
 		minhaConta = new Conta();
-		Cliente c= new Cliente();
+		Cliente c = new Cliente();
 		minhaConta.titular = c;
 		
 		//Meu	programa	pode	manter	na	memória	uma	ou	mais	de	uma	conta:
